@@ -1,0 +1,59 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template:
+    "header header header header" 1fr
+    "hero hero hero hero" 4fr
+    "menu main main main" 3fr
+    "menu Banner Banner Banner"2fr
+    "menu Extra Extra IMAGE" 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(39, 33, 33);
+
+}
+
+nav {
+    grid-area: menu;
+    background-color: red;
+}
+
+#hero {
+    grid-area: hero;
+    background-color: blue;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(39, 33, 33);
+}
+
+#banner {
+    grid-area: Banner;
+    background-color: yellow;
+}
+
+#extra {
+    grid-area: Extra;
+    background-color: green;
+}
+
+#image {
+    grid-area: IMAGE;
+    background-color: lightblue;
+}
+
+body > * {
+    text-align: center;
+    text-transform: capitalize;
+
+}
